@@ -1,0 +1,63 @@
+<div class="container">
+    <div class="row" *ngIf="users">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" [(ngModel)]="users.name" class="form-control">
+
+            </div>
+
+
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>User Name</label>
+                <input type="text" [(ngModel)]="users.username" class="form-control">
+
+            </div>
+
+
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Email</label>
+                <input type="text" [(ngModel)]="users.email" class="form-control">
+
+            </div>
+
+
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Phone</label>
+                <input type="text" [(ngModel)]="users.phone" class="form-control">
+
+            </div>
+
+
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Website</label>
+                <input type="text" [(ngModel)]="users.website" class="form-control">
+
+            </div>
+
+
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Company</label>
+                <input type="text" [(ngModel)]="users.company.name" class="form-control">
+
+            </div>
+
+
+        </div>
+    </div>
+    <div class="row" style="margin-top: 20px;">
+        <div class="col-md-6">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+</div>

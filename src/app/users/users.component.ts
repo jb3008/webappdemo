@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { UserService } from "../user.service";
 import { DataService } from "../data.service";
 import { Router } from '@angular/router';
+import { User } from '../user'
 @Component({
   selector: 'app-users',
   templateUrl: './users.component.html',
@@ -10,7 +11,7 @@ import { Router } from '@angular/router';
 export class UsersComponent implements OnInit {
 
   constructor(private UserService: UserService, public router: Router, private DataService: DataService,) { }
-  userList: any = [];
+  userList:User[] = [];
   ngOnInit(): void {
     this.getUserData();
   }
@@ -31,3 +32,4 @@ export class UsersComponent implements OnInit {
     this.DataService.changeUserState(item);
   }
 }
+
